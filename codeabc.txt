@@ -9,6 +9,12 @@ namespace RectangleApplication {
 		public double GetArea()
 			{
 			  return length*width;
-
 			}
+		public void Display() {
+		 Console.WriteLine("Area :",GetArea()); }
+	class ExecuteRectangle {
+		Rectangle r = new Rectangle();
+		r.Display();
+		Console.ReadLine();
+		}
 
