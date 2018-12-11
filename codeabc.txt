@@ -3,18 +3,26 @@ using system;
 namespace RectangleApplication {
 	class Rectangle {
 		// member variables
-		double length = 3;
-		double width = 4;
+		double length;
+		double width;
 		
+		public void AcceptDentail()
+		{
+			length = Convert.ToDouble(Console.ReadLine());
+			width = Convert.ToDouble(Console.ReadLine());
+		}
 		public double GetArea()
 			{
 			  return length*width;
 			}
 		public void Display() {
 		 Console.WriteLine("Area :",GetArea()); }
+		 }
 	class ExecuteRectangle {
+	     static void Main(string[] args) {
 		Rectangle r = new Rectangle();
 		r.Display();
 		Console.ReadLine();
 		}
-
+	}
+}
